@@ -1,4 +1,4 @@
-package com.example.user.rulate;
+package com.example.user.rulate.Main.Tab_Friend;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.user.rulate.R;
 
 /**
  * Created by user on 2017-11-03.
@@ -21,7 +23,7 @@ public class FriendNotification extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.friend_notification);
+        setContentView(R.layout.activity_friend_notification);
 
 
         back_to_friend_tab = (ImageButton)findViewById(R.id.logo_left_button);

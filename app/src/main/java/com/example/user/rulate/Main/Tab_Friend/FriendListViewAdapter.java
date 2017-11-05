@@ -1,4 +1,4 @@
-package com.example.user.rulate;
+package com.example.user.rulate.Main.Tab_Friend;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.user.rulate.R;
 
 import java.util.ArrayList;
 

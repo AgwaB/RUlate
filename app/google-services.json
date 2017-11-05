@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "724345646130",
+    "firebase_url": "https://rulate-53865.firebaseio.com",
+    "project_id": "rulate-53865",
+    "storage_bucket": "rulate-53865.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724345646130:android:4045792d66ab0cb6",
+        "android_client_info": {
+          "package_name": "com.example.user.rulate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724345646130-4o7fbak8jfk04m96m7vm5js8gn7ulqgt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.rulate",
+            "certificate_hash": "952b8a3bfba135ee3b8f2aec26c1786c1558d2be"
+          }
+        },
+        {
+          "client_id": "724345646130-n9a3p3lfdbmmm69j9df91b6foh466il4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg_rjSF4VRczKIK6DVQh2FD0BmEaSbhjU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724345646130-n9a3p3lfdbmmm69j9df91b6foh466il4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

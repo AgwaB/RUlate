@@ -1,4 +1,4 @@
-package com.example.user.rulate;
+package com.example.user.rulate.Main.Tab_Friend;
 
 import android.graphics.drawable.Drawable;
 

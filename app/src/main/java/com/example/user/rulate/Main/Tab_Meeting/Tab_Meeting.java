@@ -1,4 +1,4 @@
-package com.example.user.rulate;
+package com.example.user.rulate.Main.Tab_Meeting;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,16 +9,18 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.user.rulate.R;
+
 /**
  * Created by user on 2017-11-02.
  */
 
-public class MainTabFragment3 extends Fragment {
+public class Tab_Meeting extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.tab_fragment3, container, false);
+        View view = inflater.inflate(R.layout.tab_meeting, container, false);
 
         setHasOptionsMenu(true); //onCreateOptionMenu에서 바뀔 menu 를 승인
 
@@ -26,10 +28,9 @@ public class MainTabFragment3 extends Fragment {
         return view;
     }
 
-
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) { // res/menu 에서 친구 탭에서 작동 할 menu를 가져온다.
-        inflater.inflate(R.menu.mysetting_tab_menu,menu);
+        inflater.inflate(R.menu.meeting_tab_menu,menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 }

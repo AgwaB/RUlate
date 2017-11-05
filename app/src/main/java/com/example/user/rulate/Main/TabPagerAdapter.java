@@ -1,8 +1,11 @@
-package com.example.user.rulate;
+package com.example.user.rulate.Main;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.example.user.rulate.Main.Tab_Friend.Tab_Friend;
+import com.example.user.rulate.Main.Tab_Meeting.Tab_Meeting;
 
 /**
  * Created by user on 2017-11-02.
@@ -24,14 +27,14 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
         //Returning the current tabs
         switch (position){
             case 0:
-                MainTabFragment1 mainTabFragment1 = new MainTabFragment1();
-                return mainTabFragment1;
+                Tab_Friend tabFriend = new Tab_Friend();
+                return tabFriend;
             case 1:
-                MainTabFragment2 mainTabFragment2 = new MainTabFragment2();
-                return mainTabFragment2;
+                Tab_Meeting tabMeeting = new Tab_Meeting();
+                return tabMeeting;
             case 2:
-                MainTabFragment3 mainTabFragment3 = new MainTabFragment3();
-                return mainTabFragment3;
+                Tab_MyInfo tabMyInfo = new Tab_MyInfo();
+                return tabMyInfo;
 
             default:
                 return null;

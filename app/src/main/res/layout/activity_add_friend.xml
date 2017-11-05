@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/friend_notification_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <ImageButton
+                    android:id="@+id/logo_left_button"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_keyboard_backspace_black_36dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="친구추가"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/button_search"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#00000000"
+                    android:textColor="#bebdbd"
+                    android:text="찾기"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_search_black_36dp"/>
+<com.example.user.rulate.Main.ClearEditText
+    android:id="@+id/search_friend"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@android:color/transparent"
+    android:maxLength="25"
+    android:hint="이메일 검색으로 친구를 찾아보세요!"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/image_userIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_account_circle_black_36dp" />
+
+        <TextView
+            android:id="@+id/text_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="사용자"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_corner"
+            android:text="보내기"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
