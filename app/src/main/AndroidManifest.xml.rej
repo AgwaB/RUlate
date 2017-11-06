@@ -1,0 +1,12 @@
+diff a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml	(rejected hunks)
+@@ -16,6 +16,9 @@
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
++
++
++        <activity android:name=".FriendNotification"></activity>
+     </application>
+ 
+ </manifest>
+\ No newline at end of file

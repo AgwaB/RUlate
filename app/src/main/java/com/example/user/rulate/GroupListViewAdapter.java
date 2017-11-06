@@ -15,11 +15,11 @@ import java.util.ArrayList;
  * Created by user on 2017-11-04.
  */
 
-public class FriendListViewAdapter extends BaseAdapter {
+public class GroupListViewAdapter extends BaseAdapter {
 
-    private ArrayList<FriendListItem> listViewItemList = new ArrayList<FriendListItem>(); // Adapter에 추가된 데이터를 저장하기 위한 ArrayList
+    private ArrayList<GroupListItem> listViewItemList = new ArrayList<GroupListItem>(); // Adapter에 추가된 데이터를 저장하기 위한 ArrayList
 
-    public FriendListViewAdapter(){ // 생성자
+    public GroupListViewAdapter(){ // 생성자
 
     }
 
@@ -35,23 +35,25 @@ public class FriendListViewAdapter extends BaseAdapter {
         // "listview_item" Layout을 inflate하여 convertView 참조 획득.
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.friedn_list_item, parent, false);
+            convertView = inflater.inflate(R.layout.group_list_item, parent, false);
         }
 
         // 화면에 표시될 View(Layout이 inflate된)으로부터 위젯에 대한 참조 획득
-        ImageView iconImageView = (ImageView) convertView.findViewById(R.id.image_userIcon) ;
-        TextView nameTextView = (TextView) convertView.findViewById(R.id.text_userName) ;
-        TextView ratioTextView = (TextView) convertView.findViewById(R.id.text_userLateRatio) ;
-        TextView avgMinTextView = (TextView) convertView.findViewById(R.id.text_userLateAvgMin) ;
+        ImageView iconImageView = (ImageView) convertView.findViewById(R.id.image_groupIcon) ;
+        TextView nameTextView = (TextView) convertView.findViewById(R.id.text_groupName) ;
+        TextView locationTextView = (TextView) convertView.findViewById(R.id.text_groupLoacation);
+        
+
 
         // Data Set(listViewItemList)에서 position에 위치한 데이터 참조 획득
-        FriendListItem listViewItem = listViewItemList.get(position);
+        GroupListItem listViewItem = listViewItemList.get(position);
 
         // 아이템 내 각 위젯에 데이터 반영
-        iconImageView.setImageDrawable(listViewItem.getUserIcon());
-        nameTextView.setText(listViewItem.getUserName());
-        ratioTextView.setText(listViewItem.getUserLateRatio());
-        avgMinTextView.setText(listViewItem.getUserLateAvgMin());
+        iconImageView.setImageDrawable(listViewItem.getGroupIcon());
+        nameTextView.setText(listViewItem.getGroupName());
+        locationTextView.setText(listViewItem.getGroupLocation());
+
+        // Date , Time 아직 안받았음 String으로 받아야할지 Date 로 받아야할지 고민 -> 레이아웃도 바꿔야함
 
         return convertView;
     }
@@ -69,13 +71,12 @@ public class FriendListViewAdapter extends BaseAdapter {
     }
 
     // 아이템 데이터 추가를 위한 함수. 개발자가 원하는대로 작성 가능.
-    public void addItem(Drawable icon, String name, String ratio, String avgMin) {
-        FriendListItem item = new FriendListItem();
+    public void addItem(Drawable icon, String name, String location) {
+        GroupListItem item = new GroupListItem();
 
-        item.setUserIcon(icon);
-        item.setUserName(name);
-        item.setUserLateRatio(ratio);
-        item.setUserLateAvgMin(avgMin);
+        item.setGroupIcon(icon);
+        item.setGroupName(name);
+        item.setGroupLocation(location);
 
         listViewItemList.add(item);
     }
