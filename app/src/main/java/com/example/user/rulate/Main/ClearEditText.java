@@ -85,7 +85,7 @@ public class ClearEditText extends AppCompatEditText implements TextWatcher, Vie
 
 
     @Override
-    public boolean onTouch(final View view, final MotionEvent motionEvent) {
+    public boolean onTouch(final View view, final MotionEvent motionEvent) { // X버튼을 눌렀을 때, 텍스트 초기화
         final int x = (int) motionEvent.getX();
         if (clearDrawable.isVisible() && x > getWidth() - getPaddingRight() - clearDrawable.getIntrinsicWidth()) {
             if (motionEvent.getAction() == MotionEvent.ACTION_UP) {

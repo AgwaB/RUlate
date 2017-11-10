@@ -79,8 +79,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/view_invited_friend"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/image_userIcon"
@@ -98,7 +100,7 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="사용자"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -108,5 +110,14 @@
             android:text="보내기"
             android:textSize="15sp" />
     </LinearLayout>
+    <TextView
+        android:id="@+id/view_no_invited_friend"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="검색 결과가 없습니다."
+        android:textSize="20sp"
+        android:gravity="center"
+        android:visibility="gone"/>
 
 </LinearLayout>
